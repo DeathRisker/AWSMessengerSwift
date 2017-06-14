@@ -361,7 +361,6 @@ class ConversationViewController: UIViewController {
                         
                         
                         
-                        
                         request?.subject = "Message Sent By \(senderName)"
                         request?.message = NSString(data: jsonData, encoding: String.Encoding.utf8.rawValue) as? String
                         
@@ -417,7 +416,7 @@ class ConversationViewController: UIViewController {
         
         let conversation = conversationDataSource[indexPath.row]
         
-        
+        // configure image conversation cell
         if let _imageName = conversation._imageUrlPath {
             
             
@@ -522,6 +521,7 @@ class ConversationViewController: UIViewController {
             return cell
         }
         
+        // Configure message conversation cell
         let identifier = isLoggedInUserMessage(conversation._userId!) ? "CELL_ID_ME" : "CELL_ID_OTHER"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
@@ -551,7 +551,11 @@ class ConversationViewController: UIViewController {
         return cell
     }
     
-    
+    /**
+        Find the userName of the sender of *conversation*.
+        - Parameter conversation: A **Conversation** class instance
+        - Returns: A String representing the sender's name if found, otherwise "Unknown Name"
+     */
     func userNameFromConversation(_ conversation:Conversation) -> String {
         
         for user in recipientUsers {
@@ -569,6 +573,10 @@ class ConversationViewController: UIViewController {
         return "Unknown Name"
     }
     
+    /**
+        Checks if *userID* is the one that is logged in.
+        - Parameter userID: a valid userID registered
+     */
     func isLoggedInUserMessage(_ userID:String) -> Bool {
         
         if userID == AWSIdentityManager.default().identityId {

@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AFF20DA1EF08F9800B0498C /* AWSMobileHubHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AFF20D91EF08F9800B0498C /* AWSMobileHubHelper.framework */; };
+		885B4805240CB24C02C379F9 /* Pods_MySampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B40E88CFD47CFA1014AFD1 /* Pods_MySampleApp.framework */; };
+		BE2A2B871DD873D200E208D4 /* LocalImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2A2B861DD873D200E208D4 /* LocalImageCache.swift */; };
+		BED4A1B71DD344E30016F340 /* UIImage+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED4A1B61DD344E30016F340 /* UIImage+Util.swift */; };
+		BEFCBD3F1DB53C9F0021F466 /* ChatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD2E1DB53C9F0021F466 /* ChatTableViewController.swift */; };
+		BEFCBD401DB53C9F0021F466 /* ConversationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD2F1DB53C9F0021F466 /* ConversationViewController.swift */; };
+		BEFCBD411DB53C9F0021F466 /* CreateChatRoomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD301DB53C9F0021F466 /* CreateChatRoomVC.swift */; };
+		BEFCBD421DB53C9F0021F466 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD311DB53C9F0021F466 /* LogInViewController.swift */; };
+		BEFCBD431DB53C9F0021F466 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD321DB53C9F0021F466 /* SettingViewController.swift */; };
+		BEFCBD441DB53C9F0021F466 /* NSBundle+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD341DB53C9F0021F466 /* NSBundle+Util.swift */; };
+		BEFCBD451DB53C9F0021F466 /* NSDate+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD351DB53C9F0021F466 /* NSDate+Util.swift */; };
+		BEFCBD461DB53C9F0021F466 /* UIActivityIndicatorView+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD361DB53C9F0021F466 /* UIActivityIndicatorView+Util.swift */; };
+		BEFCBD471DB53C9F0021F466 /* UIAlertController+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD371DB53C9F0021F466 /* UIAlertController+Util.swift */; };
+		BEFCBD481DB53C9F0021F466 /* UserProfile+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD381DB53C9F0021F466 /* UserProfile+Util.swift */; };
+		BEFCBD491DB53C9F0021F466 /* ChatDynamoDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD3A1DB53C9F0021F466 /* ChatDynamoDBServices.swift */; };
+		BEFCBD4A1DB53C9F0021F466 /* UserDynamoDBServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFCBD3B1DB53C9F0021F466 /* UserDynamoDBServices.swift */; };
+		BEFCBD4B1DB53C9F0021F466 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFCBD3D1DB53C9F0021F466 /* Chat.storyboard */; };
+		BEFCBD4C1DB53C9F0021F466 /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFCBD3E1DB53C9F0021F466 /* LogIn.storyboard */; };
+		BEFCBD521DB53DFC0021F466 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFCBD511DB53DFC0021F466 /* Images.xcassets */; };
+		E7A30F04033CC05900000000 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E298857C2EC00000000 /* libsqlite3.tbd */; };
+		E7A30F041D066CF900000000 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD70E29429891F600000000 /* libz.tbd */; };
+		E7A30F042C3EAD3E00000000 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29D6014F2200000000 /* SignInViewController.swift */; };
+		E7A30F0436B7C13700000000 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E297928788C00000000 /* Conversation.swift */; };
+		E7A30F0464E5A2E000000000 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29AE6522B400000000 /* UserProfile.swift */; };
+		E7A30F047FCB457600000000 /* AWSMobileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E292584886300000000 /* AWSMobileClient.swift */; };
+		E7A30F0485B71A9900000000 /* UtilityFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E297F90B01C00000000 /* UtilityFunctions.swift */; };
+		E7A30F04C401EEAC00000000 /* ChatRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E293395EE6C00000000 /* ChatRoom.swift */; };
+		E7A30F04C94B0E3100000000 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E2987B5D9E100000000 /* Launch Screen.storyboard */; };
+		E7A30F04F1793E2900000000 /* SignIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD70E29C88DC30A00000000 /* SignIn.storyboard */; };
+		E7A30F04FF142EE300000000 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DD70E29C255B29300000000 /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FAF5FAC90000000000000000 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0AFF20D91EF08F9800B0498C /* AWSMobileHubHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSMobileHubHelper.framework; path = MySampleApp/Sdk/Aws/AWSMobileHubHelper.framework; sourceTree = "<group>"; };
+		1DD70E292584886300000000 /* AWSMobileClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AWSMobileClient.swift; path = MySampleApp/AmazonAws/AWSMobileClient.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E293395EE6C00000000 /* ChatRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatRoom.swift; path = MySampleApp/AmazonAws/Models/NoSQL/ChatRoom.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29429891F600000000 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		1DD70E29473E805000000000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = MySampleApp/App/SupportingFiles/Info.plist; sourceTree = SOURCE_ROOT; };
+		1DD70E297928788C00000000 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Conversation.swift; path = MySampleApp/AmazonAws/Models/NoSQL/Conversation.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E297F90B01C00000000 /* UtilityFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UtilityFunctions.swift; path = MySampleApp/App/Utility/UtilityFunctions.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E2987B5D9E100000000 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "MySampleApp/App/Launch Screen.storyboard"; sourceTree = SOURCE_ROOT; };
+		1DD70E298857C2EC00000000 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		1DD70E29AE6522B400000000 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = MySampleApp/AmazonAws/Models/NoSQL/UserProfile.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29C255B29300000000 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = MySampleApp/App/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29C88DC30A00000000 /* SignIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = SignIn.storyboard; path = MySampleApp/App/SignIn/SignIn.storyboard; sourceTree = SOURCE_ROOT; };
+		1DD70E29D6014F2200000000 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = MySampleApp/App/SignIn/SignInViewController.swift; sourceTree = SOURCE_ROOT; };
+		1DD70E29F64B451100000000 /* MySampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = MySampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52B40E88CFD47CFA1014AFD1 /* Pods_MySampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MySampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A03248D37DABF6622FC2CC4F /* Pods-MySampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		BE2A2B861DD873D200E208D4 /* LocalImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalImageCache.swift; path = MySampleApp/Chat/Models/LocalImageCache.swift; sourceTree = SOURCE_ROOT; };
+		BED4A1B61DD344E30016F340 /* UIImage+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Util.swift"; path = "MySampleApp/Chat/Extensions/UIImage+Util.swift"; sourceTree = SOURCE_ROOT; };
+		BEFCBD2A1DB534EE0021F466 /* MySampleApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = MySampleApp.entitlements; path = MySampleApp/MySampleApp.entitlements; sourceTree = SOURCE_ROOT; };
+		BEFCBD2E1DB53C9F0021F466 /* ChatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableViewController.swift; sourceTree = "<group>"; };
+		BEFCBD2F1DB53C9F0021F466 /* ConversationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewController.swift; sourceTree = "<group>"; };
+		BEFCBD301DB53C9F0021F466 /* CreateChatRoomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateChatRoomVC.swift; sourceTree = "<group>"; };
+		BEFCBD311DB53C9F0021F466 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		BEFCBD321DB53C9F0021F466 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		BEFCBD341DB53C9F0021F466 /* NSBundle+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+Util.swift"; sourceTree = "<group>"; };
+		BEFCBD351DB53C9F0021F466 /* NSDate+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Util.swift"; sourceTree = "<group>"; };
+		BEFCBD361DB53C9F0021F466 /* UIActivityIndicatorView+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIActivityIndicatorView+Util.swift"; sourceTree = "<group>"; };
+		BEFCBD371DB53C9F0021F466 /* UIAlertController+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Util.swift"; sourceTree = "<group>"; };
+		BEFCBD381DB53C9F0021F466 /* UserProfile+Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserProfile+Util.swift"; sourceTree = "<group>"; };
+		BEFCBD3A1DB53C9F0021F466 /* ChatDynamoDBServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDynamoDBServices.swift; sourceTree = "<group>"; };
+		BEFCBD3B1DB53C9F0021F466 /* UserDynamoDBServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDynamoDBServices.swift; sourceTree = "<group>"; };
+		BEFCBD3D1DB53C9F0021F466 /* Chat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		BEFCBD3E1DB53C9F0021F466 /* LogIn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
+		BEFCBD511DB53DFC0021F466 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = MySampleApp/App/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		FD3199DDF5B81D8CC76403D3 /* Pods-MySampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MySampleApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F426D880000000000000000 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A30F041D066CF900000000 /* libz.tbd in Frameworks */,
+				E7A30F04033CC05900000000 /* libsqlite3.tbd in Frameworks */,
+				0AFF20DA1EF08F9800B0498C /* AWSMobileHubHelper.framework in Frameworks */,
+				885B4805240CB24C02C379F9 /* Pods_MySampleApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05729722D741452679266394 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD3199DDF5B81D8CC76403D3 /* Pods-MySampleApp.debug.xcconfig */,
+				A03248D37DABF6622FC2CC4F /* Pods-MySampleApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B401C979149D267500000000 /* NoSQL */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E293395EE6C00000000 /* ChatRoom.swift */,
+				1DD70E297928788C00000000 /* Conversation.swift */,
+				1DD70E29AE6522B400000000 /* UserProfile.swift */,
+			);
+			name = NoSQL;
+			path = mysampleapp/amazonaws/models/nosql;
+			sourceTree = "<group>";
+		};
+		B401C97989ADED1000000000 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B401C979149D267500000000 /* NoSQL */,
+			);
+			name = Models;
+			path = mysampleapp/amazonaws/models;
+			sourceTree = "<group>";
+		};
+		B401C979BA6013FC00000000 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29C255B29300000000 /* AppDelegate.swift */,
+				1DD70E2987B5D9E100000000 /* Launch Screen.storyboard */,
+				BEFCBD511DB53DFC0021F466 /* Images.xcassets */,
+				B401C979E170CF1800000000 /* SignIn */,
+				B401C979DC24670000000000 /* SupportingFiles */,
+				B401C979E4AC0DF000000000 /* Utility */,
+			);
+			name = App;
+			path = mysampleapp/app;
+			sourceTree = "<group>";
+		};
+		B401C979BB4747EB00000000 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AFF20D91EF08F9800B0498C /* AWSMobileHubHelper.framework */,
+				1DD70E298857C2EC00000000 /* libsqlite3.tbd */,
+				1DD70E29429891F600000000 /* libz.tbd */,
+				52B40E88CFD47CFA1014AFD1 /* Pods_MySampleApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B401C979BB601A7E00000000 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29F64B451100000000 /* MySampleApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B401C979CA19E9F800000000 = {
+			isa = PBXGroup;
+			children = (
+				B401C979BB4747EB00000000 /* Frameworks */,
+				B401C979CBAB3A9C00000000 /* MySampleApp */,
+				B401C979BB601A7E00000000 /* Products */,
+				05729722D741452679266394 /* Pods */,
+			);
+			name = mainGroup;
+			sourceTree = "<group>";
+		};
+		B401C979CBAB3A9C00000000 /* MySampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD2A1DB534EE0021F466 /* MySampleApp.entitlements */,
+				B401C979E020F2CC00000000 /* AmazonAws */,
+				BEFCBD2C1DB53C9F0021F466 /* Chat */,
+				B401C979BA6013FC00000000 /* App */,
+			);
+			name = MySampleApp;
+			path = mysampleapp;
+			sourceTree = "<group>";
+		};
+		B401C979DC24670000000000 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29473E805000000000 /* Info.plist */,
+			);
+			name = SupportingFiles;
+			path = mysampleapp/app/supportingfiles;
+			sourceTree = "<group>";
+		};
+		B401C979E020F2CC00000000 /* AmazonAws */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E292584886300000000 /* AWSMobileClient.swift */,
+				B401C97989ADED1000000000 /* Models */,
+			);
+			name = AmazonAws;
+			path = mysampleapp/amazonaws;
+			sourceTree = "<group>";
+		};
+		B401C979E170CF1800000000 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E29C88DC30A00000000 /* SignIn.storyboard */,
+				1DD70E29D6014F2200000000 /* SignInViewController.swift */,
+			);
+			name = SignIn;
+			path = mysampleapp/app/signin;
+			sourceTree = "<group>";
+		};
+		B401C979E4AC0DF000000000 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1DD70E297F90B01C00000000 /* UtilityFunctions.swift */,
+			);
+			name = Utility;
+			path = mysampleapp/app/utility;
+			sourceTree = "<group>";
+		};
+		BEFCBD2C1DB53C9F0021F466 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD2D1DB53C9F0021F466 /* Controllers */,
+				BEFCBD331DB53C9F0021F466 /* Extensions */,
+				BEFCBD391DB53C9F0021F466 /* Models */,
+				BEFCBD3C1DB53C9F0021F466 /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		BEFCBD2D1DB53C9F0021F466 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD2E1DB53C9F0021F466 /* ChatTableViewController.swift */,
+				BEFCBD2F1DB53C9F0021F466 /* ConversationViewController.swift */,
+				BEFCBD301DB53C9F0021F466 /* CreateChatRoomVC.swift */,
+				BEFCBD311DB53C9F0021F466 /* LogInViewController.swift */,
+				BEFCBD321DB53C9F0021F466 /* SettingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BEFCBD331DB53C9F0021F466 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD341DB53C9F0021F466 /* NSBundle+Util.swift */,
+				BEFCBD351DB53C9F0021F466 /* NSDate+Util.swift */,
+				BEFCBD361DB53C9F0021F466 /* UIActivityIndicatorView+Util.swift */,
+				BEFCBD371DB53C9F0021F466 /* UIAlertController+Util.swift */,
+				BEFCBD381DB53C9F0021F466 /* UserProfile+Util.swift */,
+				BED4A1B61DD344E30016F340 /* UIImage+Util.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BEFCBD391DB53C9F0021F466 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD3A1DB53C9F0021F466 /* ChatDynamoDBServices.swift */,
+				BEFCBD3B1DB53C9F0021F466 /* UserDynamoDBServices.swift */,
+				BE2A2B861DD873D200E208D4 /* LocalImageCache.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BEFCBD3C1DB53C9F0021F466 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEFCBD3D1DB53C9F0021F466 /* Chat.storyboard */,
+				BEFCBD3E1DB53C9F0021F466 /* LogIn.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E66DC04E0000000000000000 /* MySampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218C37090000000000000001 /* Build configuration list for PBXNativeTarget "MySampleApp" */;
+			buildPhases = (
+				F885F464FA1068AFF704448C /* [CP] Check Pods Manifest.lock */,
+				E1F174220000000000000001 /* ShellScript */,
+				1870857F0000000000000000 /* Sources */,
+				4F426D880000000000000000 /* Frameworks */,
+				8A032D2C0000000000000000 /* Resources */,
+				FAF5FAC90000000000000000 /* Embed Frameworks */,
+				E1F174220000000000000000 /* ShellScript */,
+				83392F3749358FF576CF0B73 /* [CP] Embed Pods Frameworks */,
+				9DEDA8A7736ED03A2C224B7E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MySampleApp;
+			productName = MySampleApp;
+			productReference = 1DD70E29F64B451100000000 /* MySampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C847930000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					E66DC04E0000000000000000 = {
+						DevelopmentTeam = PX5S8Y6L6Z;
+						LastSwiftMigration = 0830;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 218C37090000000000000000 /* Build configuration list for PBXProject "MySampleApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B401C979CA19E9F800000000;
+			productRefGroup = B401C979BB601A7E00000000 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E66DC04E0000000000000000 /* MySampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A032D2C0000000000000000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFCBD4C1DB53C9F0021F466 /* LogIn.storyboard in Resources */,
+				BEFCBD521DB53DFC0021F466 /* Images.xcassets in Resources */,
+				E7A30F04F1793E2900000000 /* SignIn.storyboard in Resources */,
+				BEFCBD4B1DB53C9F0021F466 /* Chat.storyboard in Resources */,
+				E7A30F04C94B0E3100000000 /* Launch Screen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83392F3749358FF576CF0B73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DEDA8A7736ED03A2C224B7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MySampleApp/Pods-MySampleApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E1F174220000000000000000 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/AWSCore.framework/strip-frameworks.sh\"";
+		};
+		E1F174220000000000000001 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FILE=${SRCROOT}/MySampleApp/Sdk/CheckXcodeVersion.sh\nif [ -e $FILE ]; then\n    $FILE\nfi";
+		};
+		F885F464FA1068AFF704448C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1870857F0000000000000000 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A30F04C401EEAC00000000 /* ChatRoom.swift in Sources */,
+				BEFCBD491DB53C9F0021F466 /* ChatDynamoDBServices.swift in Sources */,
+				BEFCBD481DB53C9F0021F466 /* UserProfile+Util.swift in Sources */,
+				BEFCBD401DB53C9F0021F466 /* ConversationViewController.swift in Sources */,
+				E7A30F0464E5A2E000000000 /* UserProfile.swift in Sources */,
+				E7A30F04FF142EE300000000 /* AppDelegate.swift in Sources */,
+				BEFCBD411DB53C9F0021F466 /* CreateChatRoomVC.swift in Sources */,
+				BEFCBD451DB53C9F0021F466 /* NSDate+Util.swift in Sources */,
+				BE2A2B871DD873D200E208D4 /* LocalImageCache.swift in Sources */,
+				E7A30F0485B71A9900000000 /* UtilityFunctions.swift in Sources */,
+				BEFCBD471DB53C9F0021F466 /* UIAlertController+Util.swift in Sources */,
+				BED4A1B71DD344E30016F340 /* UIImage+Util.swift in Sources */,
+				BEFCBD421DB53C9F0021F466 /* LogInViewController.swift in Sources */,
+				BEFCBD431DB53C9F0021F466 /* SettingViewController.swift in Sources */,
+				BEFCBD461DB53C9F0021F466 /* UIActivityIndicatorView+Util.swift in Sources */,
+				E7A30F042C3EAD3E00000000 /* SignInViewController.swift in Sources */,
+				BEFCBD4A1DB53C9F0021F466 /* UserDynamoDBServices.swift in Sources */,
+				E7A30F0436B7C13700000000 /* Conversation.swift in Sources */,
+				BEFCBD441DB53C9F0021F466 /* NSBundle+Util.swift in Sources */,
+				E7A30F047FCB457600000000 /* AWSMobileClient.swift in Sources */,
+				BEFCBD3F1DB53C9F0021F466 /* ChatTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		49524373386D956C00000000 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Google/GoogleSignIn.framework/GoogleSignIn",
+					"-force_load",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Google/GoogleUtilities.framework/GoogleUtilities",
+					"$(OTHER_LDFLAGS)",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49524373386D956C00000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A03248D37DABF6622FC2CC4F /* Pods-MySampleApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySampleApp/MySampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = PX5S8Y6L6Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/**",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Aws",
+					"$(PROJECT_DIR)/MySampleApp/AmazonAws",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.awssamplemessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4952437346F3E10800000000 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Google/GoogleSignIn.framework/GoogleSignIn",
+					"-force_load",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Google/GoogleUtilities.framework/GoogleUtilities",
+					"$(OTHER_LDFLAGS)",
+				);
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4952437346F3E10800000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3199DDF5B81D8CC76403D3 /* Pods-MySampleApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySampleApp/MySampleApp.entitlements;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = PX5S8Y6L6Z;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/**",
+					"$(PROJECT_DIR)/MySampleApp/Sdk/Aws",
+					"$(PROJECT_DIR)/MySampleApp/AmazonAws",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MySampleApp/App/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.amazon.awssamplemessenger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218C37090000000000000000 /* Build configuration list for PBXProject "MySampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000000 /* Debug */,
+				49524373386D956C00000000 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		218C37090000000000000001 /* Build configuration list for PBXNativeTarget "MySampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4952437346F3E10800000001 /* Debug */,
+				49524373386D956C00000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C847930000000000000000 /* Project object */;
+}
